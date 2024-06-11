@@ -29,6 +29,7 @@ const GroupForm = ({ addGroup, editGroup, groupToEdit, setGroupToEdit }) => {
             type="text"
             value={group.name}
             onChange={(e) => setGroup({ ...group, name: e.target.value })}
+            required
           />
         </div>
         <div>
@@ -39,6 +40,7 @@ const GroupForm = ({ addGroup, editGroup, groupToEdit, setGroupToEdit }) => {
             onChange={(e) =>
               setGroup({ ...group, description: e.target.value })
             }
+            required
           />
         </div>
         <div>
