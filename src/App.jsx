@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="App">
       <h1>Group Management</h1>
       <GroupForm
         addGroup={addGroup}
@@ -41,7 +41,7 @@ function App() {
         deleteGroup={deleteGroup}
         editGroup={setGroupToEdit}
       />
-    </>
+    </div>
   );
 }
 
